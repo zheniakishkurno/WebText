@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тест: Какой цвет соответствует вашему настроению сегодня?</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Тест: Какой цвет соответствует вашему настроению сегодня?</h1>
+    
+    <div id="mainMenu">
+        <button onclick="startTest()">Начать тест</button>
+    </div>
+
+    <div id="questions" style="display: none;">
+        <div class="question" id="question1">
+            <p>1. Как вы ощущаете себя с утра?</p>
+            <div class="options">
+                <button onclick="answerQuestion('а')">Энергично и бодро</button>
+                <button onclick="answerQuestion('б')">Спокойно и расслабленно</button>
+                <button onclick="answerQuestion('в')">Раздраженно или устало</button>
+                <button onclick="answerQuestion('г')">Немного взволновано</button>
+                <button onclick="answerQuestion('д')">Сонно и вяло</button>
+            </div>
+        </div>
+
+        <div class="question" id="question2" style="display: none;">
+            <p>2. Какой тип погоды вам нравится больше всего?</p>
+            <div class="options">
+                <button onclick="answerQuestion('а')">Солнечная и ясная погода</button>
+                <button onclick="answerQuestion('б')">Дождливая или туманная погода</button>
+                <button onclick="answerQuestion('в')">Холодная или снежная погода</button>
+                <button onclick="answerQuestion('г')">Теплая и влажная погода</button>
+                <button onclick="answerQuestion('д')">Ветреная и свежая погода</button>
+            </div>
+        </div>
+
+        <div class="question" id="question3" style="display: none;">
+            <p>3. Как вы предпочитаете проводить выходные?</p>
+            <div class="options">
+                <button onclick="answerQuestion('а')">Активно, в кругу друзей или на природе</button>
+                <button onclick="answerQuestion('б')">Спокойно, читая книгу или смотря фильм</button>
+                <button onclick="answerQuestion('в')">В деловом или творческом процессе</button>
+                <button onclick="answerQuestion('г')">На семейных мероприятиях или в путешествии</button>
+                <button onclick="answerQuestion('д')">В спортивных или творческих мероприятиях</button>
+            </div>
+        </div>
+
+        <div class="question" id="question4" style="display: none;">
+            <p>4. Какой аромат вам ближе всего?</p>
+            <div class="options">
+                <button onclick="answerQuestion('а')">Свежие цветы или травы</button>
+                <button onclick="answerQuestion('б')">Ваниль или теплый древесный аромат</button>
+                <button onclick="answerQuestion('в')">Морской бриз или свежевымытая белье</button>
+                <button onclick="answerQuestion('г')">Фруктовый или ягодный аромат</button>
+                <button onclick="answerQuestion('д')">Пряный или травяной аромат</button>
+            </div>
+        </div>
+
+        <div class="question" id="question5" style="display: none;">
+            <p>5. Какой из этих праздников вам нравится больше всего?</p>
+            <div class="options">
+                <button onclick="answerQuestion('а')">День рождения или Новый год</button>
+                <button onclick="answerQuestion('б')">День благодарения или Пасха</button>
+                <button onclick="answerQuestion('в')">Хэллоуин или День святого Валентина</button>
+                <button onclick="answerQuestion('г')">День независимости или День победы</button>
+                <button onclick="answerQuestion('д')">День матери или День отца</button>
+            </div>
+        </div>
+
+        <div class="question" id="question6" style="display: none;">
+            <p>6. Какой предмет одежды вы предпочитаете носить чаще всего?</p>
+            <div class="options">
+                <button onclick="answerQuestion('а')">Яркие и насыщенные цвета</button>
+                <button onclick="answerQuestion('б')">Пастельные и нежные оттенки</button>
+                <button onclick="answerQuestion('в')">Классические и нейтральные цвета</button>
+                <button onclick="answerQuestion('г')">Модные и современные стили</button>
+                <button onclick="answerQuestion('д')">Удобные и практичные наряды</button>
+            </div>
+        </div>
+
+        <div class="question" id="question7" style="display: none;">
+            <p>7. Какое время суток вам нравится больше всего?</p>
+            <div class="options">
+                <button onclick="answerQuestion('а')">Утро</button>
+                <button onclick="answerQuestion('б')">День</button>
+                <button onclick="answerQuestion('в')">Вечер</button>
+                <button onclick="answerQuestion('г')">Ночь</button>
+                <button onclick="answerQuestion('д')">Рассвет или закат</button>
+            </div>
+        </div>
+
+        <div class="question" id="question8" style="display: none;">
+            <p>8. Какой напиток вы предпочитаете утром?</p>
+            <div class="options">
+                <button onclick="answerQuestion('а')">Кофе</button>
+                <button onclick="answerQuestion('б')">Чай</button>
+                <button onclick="answerQuestion('в')">Сок</button>
+                <button onclick="answerQuestion('г')">Какао или горячий шоколад</button>
+                <button onclick="answerQuestion('д')">Энергетический напиток или зеленый чай</button>
+            </div>
+        </div>
+
+        <div class="question" id="question9" style="display: none;">
+            <p>9. Какой животный больше всего вам нравится?</p>
+            <div class="options">
+                <button onclick="answerQuestion('а')">Собака</button>
+                <button onclick="answerQuestion('б')">Кошка</button>
+                <button onclick="answerQuestion('в')">Птица</button>
+                <button onclick="answerQuestion('г')">Лошадь</button>
+                <button onclick="answerQuestion('д')">Дельфин или кит</button>
+            </div>
+        </div>
+
+        <div class="question" id="question10" style="display: none;">
+            <p>10. Какой вид транспорта вы предпочитаете?</p>
+            <div class="options">
+                <button onclick="answerQuestion('а')">Автомобиль</button>
+                <button onclick="answerQuestion('б')">Велосипед</button>
+                <button onclick="answerQuestion('в')">Пешком</button>
+                <button onclick="answerQuestion('г')">Мотоцикл или скейтборд</button>
+                <button onclick="answerQuestion('д')">Поезд или автобус</button>
+            </div>
+        </div>
+
+        <div class="question" id="question11" style="display: none;">
+            <p>11. Какой жанр музыки вам нравится больше всего?</p>
+            <div class="options">
+                <button onclick="answerQuestion('а')">Рок</button>
+                <button onclick="answerQuestion('б')">Джаз</button>
+                <button onclick="answerQuestion('в')">Поп</button>
+                <button onclick="answerQuestion('г')">Классика или инструментальная музыка</button>
+                <button onclick="answerQuestion('д')">Электронная или танцевальная музыка</button>
+            </div>
+        </div>
+
+        <div class="question" id="question12" style="display: none;">
+            <p>12. Какую книгу вы предпочитаете читать?</p>
+            <div class="options">
+                <button onclick="answerQuestion('а')">Фантастика</button>
+                <button onclick="answerQuestion('б')">Классика</button>
+                <button onclick="answerQuestion('в')">Психология</button>
+                <button onclick="answerQuestion('г')">Детектив или триллер</button>
+                <button onclick="answerQuestion('д')">Роман или современная проза</button>
+            </div>
+        </div>
+
+        <div class="question" id="question13" style="display: none;">
+            <p>13. Какое хобби вам интереснее всего?</p>
+            <div class="options">
+                <button onclick="answerQuestion('а')">Спорт</button>
+                <button onclick="answerQuestion('б')">Рисование</button>
+                <button onclick="answerQuestion('в')">Кулинария</button>
+                <button onclick="answerQuestion('г')">Фотография или видеосъемка</button>
+                <button onclick="answerQuestion('д')">Танцы или музыкальное творчество</button>
+            </div>
+        </div>
+
+        <div class="question" id="question14" style="display: none;">
+            <p>14. Какой сезон года вам нравится больше всего?</p>
+            <div class="options">
+                <button onclick="answerQuestion('а')">Лето</button>
+                <button onclick="answerQuestion('б')">Осень</button>
+                <button onclick="answerQuestion('в')">Зима</button>
+                <button onclick="answerQuestion('г')">Весна</button>
+                <button onclick="answerQuestion('д')">Предпочитаю смену сезонов</button>
+            </div>
+        </div>
+
+        <div class="question" id="question15" style="display: none;">
+            <p>15. Какой цвет в интерьере вашего дома вам нравится больше всего?</p>
+            <div class="options">
+                <button onclick="answerQuestion('а')">Яркие и насыщенные цвета</button>
+                <button onclick="answerQuestion('б')">Пастельные и нежные оттенки</button>
+                <button onclick="answerQuestion('в')">Нейтральные и пастельные цвета</button>
+                <button onclick="answerQuestion('г')">Монохромные или минималистические цвета</button>
+                <button onclick="answerQuestion('д')">Теплые или приглушенные цвета</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="result" style="display: none;">
+        <h2>Ваш цвет сегодня: <span id="colorResult"></span></h2>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
